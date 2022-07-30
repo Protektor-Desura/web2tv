@@ -1,5 +1,5 @@
 # web2tv
-This project contains python and perl scripts which load and parse streaming TV information from the web and return the information in [xml format](http://wiki.xmltv.org/index.php/XMLTVFormat) for TV guide information and [m3u format](https://en.wikipedia.org/wiki/M3U) for TV channel lists. You can then use the xml and m3u files in various other programs such as [xTeVe](https://github.com/xteve-project/xTeVe), [Jellyfin](https://jellyfin.org/) or other iptv clients for live streaming TV.
+This project contains python and perl scripts which load and parse streaming TV information from the web and return the information in [xml format](http://wiki.xmltv.org/index.php/XMLTVFormat) for TV guide information and [m3u format](https://en.wikipedia.org/wiki/M3U) for TV channel lists. You can then use the xml and m3u files in various other programs such as [xTeVe](https://github.com/xteve-project/xTeVe), [Jellyfin](https://jellyfin.org/) or other iptv clients for live streaming internet TV.
 
 Additionally there are some helper scripts as well. All scripts were tested using Python 3.8
 ________________
