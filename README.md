@@ -1,5 +1,5 @@
 # web2tv
-This project contains python scripts which load and parse tv guide information and return the information in [xml](http://wiki.xmltv.org/index.php/XMLTVFormat) [format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd). You can then use the xml in various other programs such as [xTeVe](https://github.com/xteve-project/xTeVe) or other iptv clients that allow epg in xml format.
+This project contains python and perl scripts which load and parse tv guide information and return the information in [xml](http://wiki.xmltv.org/index.php/XMLTVFormat) [format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd). You can then use the xml in various other programs such as [xTeVe](https://github.com/xteve-project/xTeVe) or other iptv clients that allow epg in xml format.
 
 Additionally there are scripts which generate [m3u](https://en.wikipedia.org/wiki/M3U) lists as well as some helper scripts.
 
