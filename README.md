@@ -110,12 +110,9 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
 # schedules_direct
+description="Calls Schedules Direct JSON API and convert the retrieved schedules and programs to an XMLTV EPG file."
 
-#dependencies:
-```
-sudo pip install tzlocal
-```
-#help information 
+#xml & m3u arguments
 ```
 -h, --help            show this help message and exit
   -U SD_URL, --sd-url SD_URL
