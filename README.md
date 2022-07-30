@@ -6,14 +6,14 @@ Additionally there are scripts which generate [m3u](https://en.wikipedia.org/wik
 All scripts were tested using Python 3.8
 
 ________________
-*EPG Generation*
+*[EPG Generation](https://en.wikipedia.org/wiki/Electronic_program_guide)*
 - [plex.tv](https://watch.plex.tv/) (plextv.py)
 - [pluto.tv](https://pluto.tv/) (plutotv.py)
 - [schedulesdirect.org](https://schedulesdirect.org/) (schedules_direct.py)
 - [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
 - [zap2it.com](https://tvlistings.zap2it.com/) (zap2xml.py)
 ________________
-*M3U Generation*
+*[M3U Generation](https://en.wikipedia.org/wiki/M3U)*
 - [plex.tv](https://watch.plex.tv/) (plextv.py)
 - [pluto.tv](https://pluto.tv/) (plutotv.py)
 - [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
