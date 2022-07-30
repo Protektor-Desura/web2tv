@@ -7,6 +7,7 @@ ________________
 *EPG Generation*
 - plex.tv (plextv.py)
 - pluto.tv (plutotv.py)
+- zap2it (zap2xml)
 ________________
 *M3U Generation*
 - NextPVR (nextpvr.py)
