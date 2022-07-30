@@ -1,10 +1,7 @@
 # web2tv
 This project contains python and perl scripts which load and parse tv guide information and return the information in [xml](http://wiki.xmltv.org/index.php/XMLTVFormat) [format](https://github.com/XMLTV/xmltv/blob/master/xmltv.dtd). You can then use the xml in various other programs such as [xTeVe](https://github.com/xteve-project/xTeVe) or other iptv clients that allow epg in xml format.
 
-Additionally there are scripts which generate [m3u](https://en.wikipedia.org/wiki/M3U) lists as well as some helper scripts.
-
-All scripts were tested using Python 3.8
-
+Additionally there are scripts which generate [m3u](https://en.wikipedia.org/wiki/M3U) lists as well as some helper scripts. All scripts were tested using Python 3.8
 ________________
 *[EPG Generation](https://en.wikipedia.org/wiki/Electronic_program_guide)*
 - [plex.tv](https://watch.plex.tv/) (plextv.py)
@@ -28,12 +25,12 @@ ________________
 Python script to convert m3u for use with streamlink.
 
 ### m3u arguments
-
 '-i', '--inFile', type=str, nargs=1, required=False, default=['streamlink.m3u'], help='Full input file filepath. Full file path can be specified. If only file name is specified then file will be used from the current working directory if it exists.'
     
 '-o', '--outFile', type=str, nargs=1, required=False, default=['streamlink.m3u'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '-p', '--protocol', type=str, nargs=1, required=False, default=['httpstream://'], help='Stream url protocol.'
+
 
 # nextpvr
 Python script to convert pluto tv channels into m3u format.
@@ -60,7 +57,6 @@ Python script to convert pluto tv channels into m3u format.
 description="Python script to convert plex livetv guide into xml/m3u format."
     
 ### m3u arguments
-
 '-m', '--m3uFile', type=str, nargs=1, required=False, default=['plex2.m3u'], help='Full destination filepath for m3u. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '--prefix', type=str, nargs=1, required=False, default=[''], help='Channel name prefix.'
@@ -86,11 +82,11 @@ description="Python script to convert plex livetv guide into xml/m3u format."
 
 '--xml', action='store_true', required=False, help='Generate the xml file.'
 
+
 # plutotv
 Python script to convert pluto tv guide into xml/m3u format.
 
 ### m3u arguments
-
 '-m', '--m3uFile', type=str, nargs=1, required=False, default=['plutotv.m3u'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '-p', '--prefix', type=str, nargs=1, required=False, default=[''], help='Channel name prefix.'
@@ -109,6 +105,7 @@ Python script to convert pluto tv guide into xml/m3u format.
 '-x', '--xmlFile', type=str, nargs=1, required=False, default=['plutotv.xml'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '--xml', action='store_true', required=False, help='Generate the xml file.'
+
 
 # schedules_direct
 Calls Schedules Direct JSON API and convert the retrieved schedules and programs to an XMLTV EPG file.
@@ -146,7 +143,6 @@ Calls Schedules Direct JSON API and convert the retrieved schedules and programs
 Python script to convert ustvgo.tv guide into xml/m3u format.
 
 ### m3u arguments
-
 '-m', '--m3u_file', required=False, default='ustvgo.m3u', help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '-p', '--prefix', type=str, required=False, default='', help='Channel name prefix.'
@@ -158,7 +154,6 @@ Python script to convert ustvgo.tv guide into xml/m3u format.
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
 ### xml arguments
-
 '--long_date', action='store_true', required=False, help='Use longer date format. Do not use for Plex Media Server.'
 
 '-d', '--debug', action='store_true', required=False, help='Turn off headless mode for Firefox.'
@@ -169,14 +164,18 @@ Python script to convert ustvgo.tv guide into xml/m3u format.
 
 '-x', '--xml_file', default='ustvgo.xml', required=False, help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
+
 # ustvgo_m3ugrabber
 Python script to convert ustvgo.tv channels into m3u format.
+
+### m3u arguments
+None
+
 
 # zap2xml-py
 description="Python script to convert pull TV guide from Zap2It into xml format."
 
 ### xml arguments
-
 '--aid', dest='zap_aid', type=str, default='gapzap',help='Raw zap2it input parameter.  (Affiliate ID?)'
 
 '-c', '--country', dest='zap_country', type=str, default='USA',help='Country identifying the listings to fetch.'
