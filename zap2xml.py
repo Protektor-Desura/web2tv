@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# coding: utf-8
+
 """zap2xml.py -- A simplezap2it scraper.
 
 Written to use only standard library dependencies.
