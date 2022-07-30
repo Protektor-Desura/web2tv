@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+#
 import argparse
 import requests
 import requests_cache
