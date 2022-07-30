@@ -5,12 +5,12 @@ Additionally there are scripts which generate m3u lists as well as some helper s
 
 ________________
 *EPG Generation*
-- plex.tv (plex.py)
+- plex.tv (plextv.py)
 - pluto.tv (plutotv.py)
 ________________
 *M3U Generation*
 - NextPVR (nextpvr.py)
-- plex.tv (plex.py)
+- plex.tv (plextv.py)
 -  pluto.tv (plutotv.py)
 -  m3u (convert m3u for use with Streamlink)
 ________________
