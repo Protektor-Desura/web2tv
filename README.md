@@ -3,6 +3,8 @@ This project contains python scripts which load and parse tv guide information a
 
 Additionally there are scripts which generate m3u lists as well as some helper scripts.
 
+All scripts were tested using Python 3.8
+
 ________________
 *EPG Generation*
 - plex.tv (plextv.py)
@@ -18,9 +20,6 @@ ________________
 ________________
 *Helper Scripts*
 - m3u (convert m3u for use with Streamlink)
-________________
-All scripts were tested using Python 3.8
-
 ________________
 
 # m3u_modder
