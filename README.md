@@ -169,5 +169,30 @@ description="Python script to convert ustvgo.tv guide into xml/m3u format."
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
 # zap2xml-py
+description="Python script to convert pull TV guide from Zap2It into xml format."
 
-A very simple script to fetch EPG data from zap2it.com and write it to XMLTV format.
+#xml arguments
+
+'--aid', dest='zap_aid', type=str, default='gapzap',help='Raw zap2it input parameter.  (Affiliate ID?)'
+
+'-c', '--country', dest='zap_country', type=str, default='USA',help='Country identifying the listings to fetch.'
+
+'-d', '--delay', dest='delay', type=int, default=5, help='Delay, in seconds, between server fetches.'
+
+'--device', dest='zap_device', type=str, default='-', help='Raw zap2it input parameter.  (?)'
+
+'--headend-id', dest='zap_headendId', type=str, default='lineupId', help='Raw zap2it input parameter.  (?)'
+      
+'--is-override', dest='zap_isOverride', type=bool, default=True, help='Raw zap2it input parameter.  (?)'
+      
+'--language', dest='zap_languagecode', type=str, default='en', help='Raw zap2it input parameter.  (Language.)'
+
+'--pref', dest='zap_pref', type=str, default='', help='Raw zap2it input parameter.  (Preferences?)'
+
+'--timespan', dest='zap_timespan', type=int, default=3, help='Raw zap2it input parameter.  (Hours of data per fetch?)'
+
+'--timezone', dest='zap_timezone', type=str, default='', help='Raw zap2it input parameter.  (Time zone?)'
+
+'--user-id', dest='zap_userId', type=str, default='-', help='Raw zap2it input parameter.  (?)'
+
+'-z', '--zip', '--postal', dest='zap_postalCode', type=str, required=True, help='The zip/postal code identifying the listings to fetch.'
