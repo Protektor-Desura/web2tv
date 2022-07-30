@@ -55,7 +55,7 @@ description="Python script to convert pluto tv channels into m3u format."
 # plextv
 description="Python script to convert plex livetv guide into xml/m3u format."
 
-'-t', '--token', type=str, nargs=1, required=True, help='Token is required. Follow Plex instructions for finding the token. https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/#toc-0')
+'-t', '--token', type=str, nargs=1, required=True, help='Token is required. Follow Plex [instructions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/#toc-0) for finding the token.'
 
 '-d', '--days', type=int, nargs=1, required=False, default=[7], help='Days of info to collect. Max if 21.'
 
