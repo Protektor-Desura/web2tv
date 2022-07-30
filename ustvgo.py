@@ -23,7 +23,7 @@ xml_constants = {
     'source-info-url': 'https://ustvgo.tv',
     'source-info-name': 'ustvgo.tv',
     'generator-info-name': 'web2tv',
-    'generator-info-url': 'https://github.com/ReenigneArcher/web2tv'
+    'generator-info-url': 'https://github.com/Protektor-Desura/web2tv/'
 }
 
 default_headers = {
