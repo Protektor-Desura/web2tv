@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-#
+
 BEGIN { $SIG{__DIE__} = sub { 
   return if $^S;
   my $msg = join(" ", @_);
