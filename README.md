@@ -11,8 +11,8 @@ ________________
 *M3U Generation*
 - NextPVR (nextpvr.py)
 - plex.tv (plextv.py)
--  pluto.tv (plutotv.py)
--  m3u (convert m3u for use with Streamlink)
+- pluto.tv (plutotv.py)
+- m3u (convert m3u for use with Streamlink)
 ________________
 *Helper Scripts*
 -  
@@ -107,3 +107,6 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
+# zap2xml-py
+
+A very simple script to fetch EPG data from zap2it.com and write it to XMLTV format.
