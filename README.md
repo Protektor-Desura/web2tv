@@ -9,6 +9,7 @@ ________________
 *EPG Generation*
 - plex.tv (plextv.py)
 - pluto.tv (plutotv.py)
+- schedules direct (schedules_direct.py)
 - ustvgo.tv (ustvgo.py)
 - zap2it (zap2xml.py)
 ________________
@@ -108,6 +109,48 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
+# schedules direct
+
+#dependencies:
+```
+sudo pip install tzlocal
+```
+#help information 
+```
+usage: sd_json.py [-h] [-U SD_URL] [-u USERNAME] [-p PASSWORD_SHA1]
+                  [-c COUNTRY] [-z POSTALCODE] [-l LINEUP] [-H HEADERS] [-M]
+                  [-T TIMEDELTA_DAYS] [-q] [-v] [-g] [-A API_CALL]
+                  [-S SERVICE] [-X XMLTV_FILE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -U SD_URL, --sd-url SD_URL
+                        Schedules Direct URL (no trailing '/')
+  -u USERNAME, --username USERNAME
+                        Schedules Direct username
+  -p PASSWORD_SHA1, --password-sha1 PASSWORD_SHA1
+                        Schedules Direct SHA1-hashed password
+  -c COUNTRY, --country COUNTRY
+                        3-character country code
+  -z POSTALCODE, --postalcode POSTALCODE
+                        Postal Code
+  -l LINEUP, --lineup LINEUP
+                        Lineup Code
+  -H HEADERS, --headers HEADERS
+                        HTTP Headers
+  -M, --verboseMap      verboseMap off
+  -T TIMEDELTA_DAYS, --timedelta-days TIMEDELTA_DAYS
+                        Number of days retrieved
+  -q, --quiet           Quiet on
+  -v, --verbose         Verbose on
+  -g, --debug           Debug on
+  -A API_CALL, --api-call API_CALL
+                        Schedules Direct API Call
+  -S SERVICE, --service SERVICE
+                        Schedules Direct Service name
+  -X XMLTV_FILE, --xmltv-file XMLTV_FILE
+  ```
+                  
 # ustvgo
 description="Python script to convert ustvgo.tv guide into xml/m3u format."
 
