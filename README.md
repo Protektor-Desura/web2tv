@@ -16,7 +16,7 @@ ________________
 - plutotv.com (plutotv.py)
 - ustvgo.tv (ustvgo.py)
 ________________
-*HeLper Scripts*
+*Helper Scripts*
 - m3u (convert m3u for use with Streamlink)
 ________________
 All scripts were tested using Python 3.8
