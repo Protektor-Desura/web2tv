@@ -117,13 +117,7 @@ sudo pip install tzlocal
 ```
 #help information 
 ```
-usage: sd_json.py [-h] [-U SD_URL] [-u USERNAME] [-p PASSWORD_SHA1]
-                  [-c COUNTRY] [-z POSTALCODE] [-l LINEUP] [-H HEADERS] [-M]
-                  [-T TIMEDELTA_DAYS] [-q] [-v] [-g] [-A API_CALL]
-                  [-S SERVICE] [-X XMLTV_FILE]
-
-optional arguments:
-  -h, --help            show this help message and exit
+-h, --help            show this help message and exit
   -U SD_URL, --sd-url SD_URL
                         Schedules Direct URL (no trailing '/')
   -u USERNAME, --username USERNAME
