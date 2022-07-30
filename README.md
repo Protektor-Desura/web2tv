@@ -109,7 +109,7 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
-# schedules direct
+# schedules_direct
 
 #dependencies:
 ```
