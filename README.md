@@ -10,10 +10,11 @@ ________________
 - zap2it (zap2xml.py)
 ________________
 *M3U Generation*
+- m3u (convert m3u for use with Streamlink)
 - NextPVR (nextpvr.py)
 - plex.tv (plextv.py)
-- pluto.tv (plutotv.py)
-- m3u (convert m3u for use with Streamlink)
+- plutotv.com (plutotv.py)
+- ustvgo.tv (ustvgo.py)
 ________________
 *Helper Scripts*
 -  
