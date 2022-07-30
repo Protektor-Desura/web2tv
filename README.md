@@ -9,9 +9,9 @@ ________________
 *EPG Generation*
 - plex.tv (plextv.py)
 - pluto.tv (plutotv.py)
-- schedules direct (schedules_direct.py)
+- schedulesdirect.org (schedules_direct.py)
 - ustvgo.tv (ustvgo.py)
-- zap2it (zap2xml.py)
+- zap2it.com (zap2xml.py)
 ________________
 *M3U Generation*
 - plex.tv (plextv.py)
