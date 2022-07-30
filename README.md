@@ -24,7 +24,9 @@ ________________
 ________________
 
 # m3u_modder
-description="Python script to convert m3u for use with streamlink."
+Python script to convert m3u for use with streamlink.
+
+### m3u arguments
 
 '-i', '--inFile', type=str, nargs=1, required=False, default=['streamlink.m3u'], help='Full input file filepath. Full file path can be specified. If only file name is specified then file will be used from the current working directory if it exists.'
     
@@ -33,8 +35,9 @@ description="Python script to convert m3u for use with streamlink."
 '-p', '--protocol', type=str, nargs=1, required=False, default=['httpstream://'], help='Stream url protocol.'
 
 # nextpvr
-description="Python script to convert pluto tv channels into m3u format."
+Python script to convert pluto tv channels into m3u format.
 
+### m3u arguments
 -f', '--file', type=str, nargs=1, required=False, default=['nextpvr.m3u'], help='Full destination filepath. Default is nextpvr.m3u. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '-p', '--prefix', type=str, nargs=1, required=False, default=[''], help='Channel name prefix.'
@@ -54,22 +57,8 @@ description="Python script to convert pluto tv channels into m3u format."
 
 # plextv
 description="Python script to convert plex livetv guide into xml/m3u format."
-
-'-t', '--token', type=str, nargs=1, required=True, help='Token is required. Follow Plex [instructions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/#toc-0) for finding the token.'
-
-'-d', '--days', type=int, nargs=1, required=False, default=[7], help='Days of info to collect. Max if 21.'
-
-'-p', '--pastdays', type=int, nargs=1, required=False, default=[0], help='Days in past of info to collect. Max is 1.'
-
-'-l', '--language', type=str, nargs=1, required=False, default=['en'], help='Plex language... Get from url same as token.'
-
-#xml arguments
-
-'-x', '--xmlFile', type=str, nargs=1, required=False, default=['plex2.xml'], help='Full destination filepath for xml. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
-
-'--xml', action='store_true', required=False, help='Generate the xml file.'
     
-#m3u arguments
+### m3u arguments
 
 '-m', '--m3uFile', type=str, nargs=1, required=False, default=['plex2.m3u'], help='Full destination filepath for m3u. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
@@ -83,19 +72,23 @@ description="Python script to convert plex livetv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
+### xml arguments
+'-t', '--token', type=str, nargs=1, required=True, help='Token is required. Follow Plex [instructions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/#toc-0) for finding the token.'
 
-# plutotv
-description="Python script to convert pluto tv guide into xml/m3u format."
+'-d', '--days', type=int, nargs=1, required=False, default=[7], help='Days of info to collect. Max if 21.'
 
-'-e', '--epgHours', type=int, nargs=1, required=False, default=[10], help='Hours of EPG to collect. Pluto.TV only provides a few hours of EPG. Max allowed is 12.'
+'-p', '--pastdays', type=int, nargs=1, required=False, default=[0], help='Days in past of info to collect. Max is 1.'
 
-#xml arguments
+'-l', '--language', type=str, nargs=1, required=False, default=['en'], help='Plex language... Get from url same as token.'
 
-'-x', '--xmlFile', type=str, nargs=1, required=False, default=['plutotv.xml'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+'-x', '--xmlFile', type=str, nargs=1, required=False, default=['plex2.xml'], help='Full destination filepath for xml. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
 '--xml', action='store_true', required=False, help='Generate the xml file.'
-    
-#m3u arguments
+
+# plutotv
+Python script to convert pluto tv guide into xml/m3u format.
+
+### m3u arguments
 
 '-m', '--m3uFile', type=str, nargs=1, required=False, default=['plutotv.m3u'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
@@ -109,10 +102,17 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
-# schedules_direct
-description="Calls Schedules Direct JSON API and convert the retrieved schedules and programs to an XMLTV EPG file."
+### xml arguments
+'-e', '--epgHours', type=int, nargs=1, required=False, default=[10], help='Hours of EPG to collect. Pluto.TV only provides a few hours of EPG. Max allowed is 12.'
 
-#xml & m3u arguments
+'-x', '--xmlFile', type=str, nargs=1, required=False, default=['plutotv.xml'], help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+
+'--xml', action='store_true', required=False, help='Generate the xml file.'
+
+# schedules_direct
+Calls Schedules Direct JSON API and convert the retrieved schedules and programs to an XMLTV EPG file.
+
+### xml & m3u arguments
 ```
   -U SD_URL, --sd-url SD_URL
                         Schedules Direct URL (no trailing '/')
@@ -142,21 +142,9 @@ description="Calls Schedules Direct JSON API and convert the retrieved schedules
   ```
                   
 # ustvgo
-description="Python script to convert ustvgo.tv guide into xml/m3u format."
+Python script to convert ustvgo.tv guide into xml/m3u format.
 
-'--long_date', action='store_true', required=False, help='Use longer date format. Do not use for Plex Media Server.'
-
-'-d', '--debug', action='store_true', required=False, help='Turn off headless mode for Firefox.'
-
-'-t', '--timeout', type=int, default=10, help='Maximum number of seconds to wait for the response'
-
-'--max_retries', type=int, default=3,help='Maximum number of attempts to collect data'
-
-#xml arguments
-
-'-x', '--xml_file', default='ustvgo.xml', required=False, help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
-
-#m3u arguments
+### m3u arguments
 
 '-m', '--m3u_file', required=False, default='ustvgo.m3u', help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
 
@@ -168,10 +156,22 @@ description="Python script to convert ustvgo.tv guide into xml/m3u format."
 
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
+### xml arguments
+
+'--long_date', action='store_true', required=False, help='Use longer date format. Do not use for Plex Media Server.'
+
+'-d', '--debug', action='store_true', required=False, help='Turn off headless mode for Firefox.'
+
+'-t', '--timeout', type=int, default=10, help='Maximum number of seconds to wait for the response'
+
+'--max_retries', type=int, default=3,help='Maximum number of attempts to collect data'
+
+'-x', '--xml_file', default='ustvgo.xml', required=False, help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+
 # zap2xml-py
 description="Python script to convert pull TV guide from Zap2It into xml format."
 
-#xml arguments
+### xml arguments
 
 '--aid', dest='zap_aid', type=str, default='gapzap',help='Raw zap2it input parameter.  (Affiliate ID?)'
 
