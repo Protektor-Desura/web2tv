@@ -50,7 +50,7 @@ description="Python script to convert pluto tv channels into m3u format."
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
 
-# plex
+# plextv
 description="Python script to convert plex livetv guide into xml/m3u format."
 
 '-t', '--token', type=str, nargs=1, required=True, help='Token is required. Follow Plex instructions for finding the token. https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/#toc-0')
