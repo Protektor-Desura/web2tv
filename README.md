@@ -14,13 +14,13 @@ ________________
 - zap2it (zap2xml.py)
 ________________
 *M3U Generation*
-- NextPVR (nextpvr.py)
 - plex.tv (plextv.py)
 - plutotv.com (plutotv.py)
 - ustvgo.tv (ustvgo.py)
 ________________
 *Helper Scripts*
-- m3u_modder (convert m3u for use with [Streamlink](https://github.com/streamlink/streamlink))
+- m3u_modder (m3u_modder.py) (convert m3u for use with [Streamlink](https://github.com/streamlink/streamlink))
+- NextPVR (nextpvr.py) (convert pluto tv channels into m3u format)
 ________________
 
 # m3u_modder
