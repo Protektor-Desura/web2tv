@@ -20,7 +20,7 @@ ________________
 ________________
 *Helper Scripts*
 - m3u_modder (m3u_modder.py) (convert m3u for use with [Streamlink](https://github.com/streamlink/streamlink))
-- NextPVR (nextpvr.py) (convert pluto tv channels into m3u format for use with [NextPVR](https://www.nextpvr.com/))
+- nextpvr (nextpvr.py) (convert pluto tv channels into m3u format for use with [NextPVR](https://www.nextpvr.com/))
 ________________
 
 # m3u_modder
