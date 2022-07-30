@@ -17,6 +17,7 @@ ________________
 - [plex.tv](https://watch.plex.tv/) (plextv.py)
 - [pluto.tv](https://pluto.tv/) (plutotv.py)
 - [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
+- [ustvgo.tv](https://ustvgo.tv/) (ustvgo_m3ugrabber.py)
 ________________
 *Helper Scripts*
 - m3u_modder (m3u_modder.py) (convert m3u for use with [Streamlink](https://github.com/streamlink/streamlink))
@@ -167,6 +168,9 @@ Python script to convert ustvgo.tv guide into xml/m3u format.
 '--max_retries', type=int, default=3,help='Maximum number of attempts to collect data'
 
 '-x', '--xml_file', default='ustvgo.xml', required=False, help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+
+# ustvgo_m3ugrabber
+Python script to convert ustvgo.tv channels into m3u format.
 
 # zap2xml-py
 description="Python script to convert pull TV guide from Zap2It into xml format."
