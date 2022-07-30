@@ -7,6 +7,7 @@ ________________
 *EPG Generation*
 - plex.tv (plextv.py)
 - pluto.tv (plutotv.py)
+- ustvgo.tv (ustvgo.py)
 - zap2it (zap2xml.py)
 ________________
 *M3U Generation*
@@ -104,6 +105,32 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 '-s', '--startNumber', type=int, nargs=1, required=False, default=[1], help='Start numbering here. For example 9000. If -k, --keepNumber is used then channel 2 would become channel 9002, otherwise the first channel number found would be 9000, second channel found would be 9001, etc.'
 
 '-k', '--keepNumber', action='store_true', required=False, help='Keep existing number scheme. Script will add existing number to start number. Recommended start number ends with a 0.'
+
+'--m3u', action='store_true', required=False, help='Generate the m3u file.'
+
+'--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
+
+# ustvgo
+
+'--long_date', action='store_true', required=False, help='Use longer date format. Do not use for Plex Media Server.'
+
+'-d', '--debug', action='store_true', required=False, help='Turn off headless mode for Firefox.'
+
+'-t', '--timeout', type=int, default=10, help='Maximum number of seconds to wait for the response'
+
+'--max_retries', type=int, default=3,help='Maximum number of attempts to collect data'
+
+#xml arguments
+
+'-x', '--xml_file', default='ustvgo.xml', required=False, help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+
+#m3u arguments
+
+'-m', '--m3u_file', required=False, default='ustvgo.m3u', help='Full destination filepath. Full file path can be specified. If only file name is specified then file will be placed in the current working directory.'
+
+'-p', '--prefix', type=str, required=False, default='', help='Channel name prefix.'
+
+'-s', '--start_number', type=int, required=False, default=1, help='Start numbering here. For example 9000.'
 
 '--m3u', action='store_true', required=False, help='Generate the m3u file.'
 
