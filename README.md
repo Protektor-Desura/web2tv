@@ -109,6 +109,7 @@ description="Python script to convert pluto tv guide into xml/m3u format."
 '--streamlink', action='store_true', required=False, help='Generate the stream urls for use with Streamlink.'
 
 # ustvgo
+description="Python script to convert USTVGO tv guide into xml/m3u format."
 
 '--long_date', action='store_true', required=False, help='Use longer date format. Do not use for Plex Media Server.'
 
