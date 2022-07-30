@@ -19,7 +19,7 @@ ________________
 - ustvgo.tv (ustvgo.py)
 ________________
 *Helper Scripts*
-- m3u (convert m3u for use with Streamlink)
+- m3u_modder (convert m3u for use with Streamlink)
 ________________
 
 # m3u_modder
