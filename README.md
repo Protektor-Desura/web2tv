@@ -7,20 +7,20 @@ All scripts were tested using Python 3.8
 
 ________________
 *EPG Generation*
-- plex.tv (plextv.py)
-- pluto.tv (plutotv.py)
-- schedulesdirect.org (schedules_direct.py)
-- ustvgo.tv (ustvgo.py)
-- zap2it.com (zap2xml.py)
+- [plex.tv](https://watch.plex.tv/) (plextv.py)
+- [pluto.tv](https://pluto.tv/) (plutotv.py)
+- [schedulesdirect.org](https://schedulesdirect.org/) (schedules_direct.py)
+- [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
+- [zap2it.com](https://tvlistings.zap2it.com/) (zap2xml.py)
 ________________
 *M3U Generation*
-- plex.tv (plextv.py)
-- plutotv.com (plutotv.py)
-- ustvgo.tv (ustvgo.py)
+- [plex.tv](https://watch.plex.tv/) (plextv.py)
+- [pluto.tv](https://pluto.tv/) (plutotv.py)
+- [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
 ________________
 *Helper Scripts*
 - m3u_modder (m3u_modder.py) (convert m3u for use with [Streamlink](https://github.com/streamlink/streamlink))
-- NextPVR (nextpvr.py) (convert pluto tv channels into m3u format)
+- NextPVR (nextpvr.py) (convert pluto tv channels into m3u format for use with [NextPVR](https://www.nextpvr.com/))
 ________________
 
 # m3u_modder
