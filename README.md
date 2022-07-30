@@ -114,7 +114,6 @@ description="Calls Schedules Direct JSON API and convert the retrieved schedules
 
 #xml & m3u arguments
 ```
--h, --help            show this help message and exit
   -U SD_URL, --sd-url SD_URL
                         Schedules Direct URL (no trailing '/')
   -u USERNAME, --username USERNAME
