@@ -16,9 +16,10 @@ ________________
 ________________
 *Helper Scripts*
 -  
-
+________________
 All scripts were tested using Python 3.8
 
+________________
 
 # m3u_modder
 description="Python script to convert m3u for use with streamlink."
