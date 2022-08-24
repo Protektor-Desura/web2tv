@@ -8,7 +8,7 @@ ________________
 - [pluto.tv](https://pluto.tv/) (plutotv.py)
 - [schedulesdirect.org](https://schedulesdirect.org/) (schedules_direct.py)
 - [ustvgo.tv](https://ustvgo.tv/) (ustvgo.py)
-- [zap2it.com](https://tvlistings.zap2it.com/) (zap2xml.py)
+- [zap2it.com](https://tvlistings.zap2it.com/) [TV Guide](https://www.tvguide.com/) (zap2xml.py)
 ________________
 *[M3U Generation](https://en.wikipedia.org/wiki/M3U)*
 - [plex.tv](https://watch.plex.tv/) (plextv.py)
